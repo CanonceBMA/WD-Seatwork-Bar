@@ -3,14 +3,14 @@ body {
 }
 
 .hero {
-    background-image: url(https://weehonker.wordpress.com/wp-content/uploads/2013/06/indoors-bottles-bar-drinks-pub-new-hd-wallpaper.jpg);
-    background-size: cover;
+   
     color: white;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
 }
 
 footer {
