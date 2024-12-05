@@ -110,5 +110,5 @@ WD-ProjectName
 ## Resources
 
 | Title | Purpose | Link |
-
+|-|-|-|
 | Images | Here is where I get the menu pictures. | https://www.canva.com/ |
