@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - D'SIPS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">D'SIPS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../1about/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../3contact/index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x400" alt="Product Image" class="product-img-detail" id="product-image">
+            </div>
+            <div class="col-md-6">
+                <div class="product-detail-card" id="product-details">
+                    <h2 class="product-title-detail" id="product-title">Product Title</h2>
+                    <p class="product-price-detail" id="product-price">$0.00</p>
+                    <p class="product-description" id="product-description">Product description will be displayed here.</p>
+                    <button class="btn btn-success">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        if (productId === '1') {
+            document.getElementById('product-title').textContent = "D'SIPS Strawberry Daiquiri";
+            document.getElementById('product-price').textContent = "₱400";
+            document.getElementById('product-description').textContent = "The Strawberry Daiquiri is a refreshing, tropical cocktail made with fresh strawberries, rum, lime juice, and sugar, blended to perfection. It's a perfect choice for those who enjoy fruity cocktails with a hint of tartness, balanced by the sweetness of ripe strawberries. This drink is served cold and garnished with a strawberry or a lime wheel for a burst of color and flavor.";
+            document.getElementById('product-image').src = "https://i.ibb.co/QDJfMb4/P1.png";
+        } else if (productId === '2') {
+            document.getElementById('product-title').textContent = "D'SIPS Old Fashioned";
+            document.getElementById('product-price').textContent = "₱600";
+            document.getElementById('product-description').textContent = "The Old Fashioned is a timeless cocktail that originated in the early 18th century. Known for its simplicity and strong, bold flavors, it features a perfect balance of whiskey, sugar, bitters, and a splash of water. Served in a lowball glass, it's a sophisticated drink for those who appreciate the classic approach to cocktails. The Old Fashioned is garnished with a twist of orange peel and a cherry, making it both visually appealing and refreshing to the taste.";
+            document.getElementById('product-image').src = "https://i.ibb.co/ZJG5jTX/P2.png";
+        } else if (productId === '3') {
+            document.getElementById('product-title').textContent = "D'SIPS Classic Mojito";
+            document.getElementById('product-price').textContent = "₱800";
+            document.getElementById('product-description').textContent = "The Classic Mojito is a refreshing, minty cocktail that originates from Cuba. Known for its crisp, invigorating flavor, it's made with rum, fresh mint leaves, lime, and a touch of sweetness. The combination of mint and lime, along with the slight fizz from soda water, makes the Mojito a perfect cocktail for a hot day or any casual gathering. It's light, refreshing, and always a crowd-pleaser.";
+            document.getElementById('product-image').src = "https://i.ibb.co/D55bzsN/P3.png";
+        }
+    </script>
+
+    <br></br>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 D'SIPS. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
